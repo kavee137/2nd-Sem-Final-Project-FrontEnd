@@ -115,7 +115,7 @@ body {
 }
 
 /* Mobile and Tablet Styles */
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
     .category-container {
         flex-wrap: nowrap !important;
         overflow-x: auto;
@@ -148,6 +148,12 @@ body {
 
     .category-card-text-section div:nth-child(2) {
         font-size: 11px;
+    }
+
+    .nav-post-ad-button {
+        margin-left: 0;
+        margin-top: 50px;
+        margin-bottom: 10px;
     }
 }
 
