@@ -88,16 +88,23 @@ body {
 
 
 
-
+.browse-by-category {
+    font-weight: bold;
+}
 
 .main-category-section {
     margin-top: 70px;
 }
 
 .category-card {
+    transition: transform 0.3s ease;
     width: 224px;
     margin: 30px;
     cursor: pointer;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
 }
 
 .category-card-text-section {
@@ -125,7 +132,8 @@ body {
     margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
-    background-color: #d8d8d8;
+    /*background-color: #d8d8d8;*/
+    background-color: #00000019;
 }
 
 
