@@ -5,6 +5,7 @@ body {
     background-color: #f8f9fa;
 }
 
+
 .nav-toggler-button {
     border: none;
     outline: none;
@@ -35,10 +36,19 @@ body {
     max-width: 1200px;
 }
 
-.nav-button {
-    font-family: "Varela Round", serif;
-    font-weight: 400;
-    font-style: normal;
+.all-ads-button {
+    padding: 3px 5px 3px 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+.nav-ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0; /* Optional: Removes default padding */
+    margin: 0;  /* Optional: Removes default margin */
 }
 
 .nav-login {
@@ -47,6 +57,10 @@ body {
     font-family: "Rubik", serif;
     font-weight: 500;
     font-style: normal;
+}
+
+.nav-login-message-buttons {
+    padding: 3px 10px ;
 }
 
 .nav-post-ad-button {
@@ -59,6 +73,11 @@ body {
     border: none;
     margin-left: 30px;
 }
+
+
+
+
+
 
 .home-search-section {
     width: 100%;
@@ -189,12 +208,30 @@ body {
         margin-top: 50px;
         margin-bottom: 10px;
     }
+
+    .all-ads-button {
+        width: 100px;
+        margin-left: 15px;
+        padding: 6px 7px 9px 1px;
+
+        /*font-family: "Varela Round", serif;*/
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+
+    .nav-post-ad-button {
+        font-size: 12px;
+        padding: 6px 9px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
 }
 
 /* Small mobile devices */
 @media (max-width: 480px) {
     .category-card {
-        width: 160px;
-        margin: 10px;
+        /*width: 160px;*/
+        /*margin: 10px;*/
     }
 }

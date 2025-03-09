@@ -1,0 +1,67 @@
+.nav-toggler-button {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.nav-toggler-button:focus {
+    outline: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+.nav-toggler-button .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.navbar {
+    background-color: #4D9DFB;
+    /*height: 90px;*/
+}
+
+.logo-nav-bar {
+    width: 200px;
+    margin: 10px 20px 10px 0;
+    /*margin-right: 30px;*/
+}
+
+.nav-div {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.all-ads-button {
+    padding: 3px 5px 3px 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+.nav-ul {
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0; /* Optional: Removes default padding */
+    margin: 0;  /* Optional: Removes default margin */
+}
+
+.nav-login {
+    text-decoration: none;
+    color: white;
+    font-family: "Rubik", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-login-message-buttons {
+    padding: 3px 10px ;
+}
+
+.nav-post-ad-button {
+    background: #ffffff;
+    border-radius: 10px;
+    font-family: "Rubik", serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px 11px;
+    border: none;
+    margin-left: 30px;
+}

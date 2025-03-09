@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name = "description" content = "This is vikunuwa.lk application">
+  <meta name = "keywords" content = "java, css, javascript">
+  <meta name = "author" content = "Kaveesha Rukshan" >
+  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikunuwa</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/vikunuwa-mobile-logo.png">
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--font awesome-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!--sweetalert-->
+  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!--Rubik FONT-->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!--Varela font-->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!--font roboto flex-->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles/all-ads.css">
+  <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="nav-div container-fluid">
+      <button class="navbar-toggler nav-toggler-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a href="index.html">
+        <img class="logo-nav-bar" src="assets/vikunuwa-logo.png">
+      </a>
+
+<!--      <img class="logo-nav-bar" src="assets/vikunuwa-logo.png">-->
+
+      <!--<a class="navbar-brand all-ads-button" href="#">All ads</a>-->
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item bg-warning all-ads-button" style= "border-radius: 5px">
+            <a class=" all-ads-button" aria-current="page" href="#">All ads</a>
+          </li>
+        </ul>
+
+        <ul class="d-flex nav-ul">
+          <li class="nav-login-message-buttons">
+            <a class="nav-login" style="cursor:pointer;">
+              <div>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd"/>
+                </svg>
+                <span>Login</span>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-login-message-buttons">
+            <a class="nav-login" style="cursor:pointer; ">
+              <div>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M3.559 4.544c.355-.35.834-.544 1.33-.544H19.11c.496 0 .975.194 1.33.544.356.35.559.829.559 1.331v9.25c0 .502-.203.981-.559 1.331-.355.35-.834.544-1.33.544H15.5l-2.7 3.6a1 1 0 0 1-1.6 0L8.5 17H4.889c-.496 0-.975-.194-1.33-.544A1.868 1.868 0 0 1 3 15.125v-9.25c0-.502.203-.981.559-1.331ZM7.556 7.5a1 1 0 1 0 0 2h8a1 1 0 0 0 0-2h-8Zm0 3.5a1 1 0 1 0 0 2H12a1 1 0 1 0 0-2H7.556Z" clip-rule="evenodd"/>
+                </svg>
+                <span>Chat</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+
+
+        <button class="nav-post-ad-button">POST YOUR AD
+          <svg style="margin-left: 6px" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path  fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<!-- Search Header -->
+<div class="search-container">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <button class="location-btn">
+          <i class="fas fa-map-marker-alt"></i> Select Location
+        </button>
+      </div>
+      <div class="col-md-3 mb-2 mb-md-0">
+        <button class="category-btn">
+          <i class="fas fa-tag"></i> Select Category
+        </button>
+      </div>
+      <div class="col-md-6 position-relative">
+        <input type="text" class="search-box" placeholder="What are you looking for?">
+        <button class="search-btn position-absolute">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--main content-->
+<div class="container mt-4" style="max-width: 1200px">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3">
+      <div class="sidebar">
+        <div class="mb-4">
+          <p class="filter-title">Sort results by</p>
+          <select class="sort-dropdown">
+            <option>Date: Newest on top</option>
+            <option>Price: Low to high</option>
+            <option>Price: High to low</option>
+          </select>
+        </div>
+
+        <div class="mb-4">
+          <p class="filter-title">Filter ads by</p>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="urgent">
+            <label class="form-check-label" for="urgent">
+              <span class="urgent-tag">URGENT</span>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="featured">
+            <label class="form-check-label" for="featured">
+              <span class="featured-tag">FEATURED</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p class="filter-title">Type of poster</p>
+          <select class="type-dropdown">
+            <option>All</option>
+            <option>Individual</option>
+            <option>Business</option>
+          </select>
+        </div>
+
+        <div class="category-section mb-4">
+          <p class="filter-title d-flex justify-content-between align-items-center">
+            Category
+            <i class="fas fa-chevron-up"></i>
+          </p>
+          <div>
+            <p class="fw-bold">All Categories</p>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-mobile-alt category-icon"></i>
+                Electronics
+              </div>
+              <span class="category-count">(151,445)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-home category-icon"></i>
+                Property
+              </div>
+              <span class="category-count">(81,495)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-car category-icon"></i>
+                Vehicles
+              </div>
+              <span class="category-count">(68,705)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-tools category-icon"></i>
+                Services
+              </div>
+              <span class="category-count">(25,736)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-couch category-icon"></i>
+                Home & Garden
+              </div>
+              <span class="category-count">(24,878)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-briefcase category-icon"></i>
+                Business & Industry
+              </div>
+              <span class="category-count">(15,288)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-user-tie category-icon"></i>
+                Jobs
+              </div>
+              <span class="category-count">(10,410)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-gamepad category-icon"></i>
+                Hobby, Sport & Kids
+              </div>
+              <span class="category-count">(7,022)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-paw category-icon"></i>
+                Animals
+              </div>
+              <span class="category-count">(6,098)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-tshirt category-icon"></i>
+                Fashion & Beauty
+              </div>
+              <span class="category-count">(5,197)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-graduation-cap category-icon"></i>
+                Education
+              </div>
+              <span class="category-count">(1,994)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-ellipsis-h category-icon"></i>
+                Other
+              </div>
+              <span class="category-count">(1,767)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-shopping-basket category-icon"></i>
+                Essentials
+              </div>
+              <span class="category-count">(822)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-tractor category-icon"></i>
+                Agriculture
+              </div>
+              <span class="category-count">(719)</span>
+            </div>
+            <div class="category-item">
+              <div>
+                <i class="fas fa-globe category-icon"></i>
+                Work Overseas
+              </div>
+              <span class="category-count">(254)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="location-section">
+          <p class="filter-title d-flex justify-content-between align-items-center">
+            Location
+            <i class="fas fa-chevron-up"></i>
+          </p>
+          <div>
+            <p class="fw-bold">All of Sri Lanka</p>
+            <div class="category-item">
+              <div>Colombo</div>
+              <span class="category-count">(239,538)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <div class="main-content">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">All ads in Sri Lanka</li>
+          </ol>
+        </nav>
+
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <h1 class="page-title">Buy, Sell, Rent or Find Anything in Sri Lanka</h1>
+            <p class="page-subtitle">Showing 1-25 of 401,830 ads</p>
+          </div>
+          <button class="save-search-btn">
+            <i class="far fa-bookmark"></i> Save search
+          </button>
+        </div>
+
+        <!-- Featured Product -->
+        <div class="product-card">
+          <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="product-image-container">
+                  <img src="assets/all-ads/asus-zenbook.png" class="product-image" alt="Asus Zenbook">
+                  <img src="https://img.icons8.com/?size=100&id=3KqnS78ZB6Ew&format=png&color=000000" class="premium-badge" alt="Premium">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="mb-2">Dream IT</div>
+            <h2 class="product-title">Asus Zenbook Q425MA intel ultra 7 155H| 14.0"| 16GB| 1TB</h2>
+            <p class="product-price">Rs 293,000</p>
+          </div>
+        </div>
+
+        <!-- Regular Products -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="product-card"  onclick="window.location.href='product.html';">
+              <div class="product-image-container">
+                <img src="assets/all-ads/iphone-se.png" class="product-image" alt="iPhone SE">
+              </div>
+              <div class="product-info">
+                <div class="d-flex justify-content-between">
+                  <h2 class="product-title">Apple iPhone SE 2 128GB|64GB (Used)</h2>
+                  <span class="favorite-btn"><i class="fas fa-heart"></i></span>
+                </div>
+                <div>
+                  <span class="member-badge">MEMBER</span>
+                  <span class="verified-badge">VERIFIED SELLER</span>
+                </div>
+                <p class="location-badge">Kalutara, Mobile Phones</p>
+                <p class="product-price">Rs 42,999</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="product-card"  onclick="window.location.href='product.html';">
+              <div class="product-image-container">
+                <img src="assets/all-ads/nissan-xtrail.png" class="product-image" alt="Nissan X-Trail">
+              </div>
+              <div class="product-info">
+                <div class="d-flex justify-content-between">
+                  <h2 class="product-title">Nissan X-Trail T31 Diesal Highest 2013</h2>
+                  <span class="favorite-btn"><i class="fas fa-heart"></i></span>
+                </div>
+                <p class="km-badge">198,000 km</p>
+                <div>
+                  <span class="member-badge">MEMBER</span>
+                  <span class="featured-tag">PREMIUM</span>
+                </div>
+                <p class="location-badge">Colombo, Cars</p>
+                <p class="product-price">Rs 12,950,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="product-card"  onclick="window.location.href='product.html';">
+              <div class="product-image-container">
+                <img src="assets/all-ads/iphone-12-pro.png" class="product-image" alt="iPhone 12">
+              </div>
+              <div class="product-info">
+                <div class="d-flex justify-content-between">
+                  <h2 class="product-title">Apple iPhone 12 Pro Max 512GB (Used)</h2>
+                </div>
+                <p class="location-badge">Colombo, Mobile Phones</p>
+                <p class="product-price">Rs 165,000</p>
+                <p class="timestamp">just now</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="product-card"  onclick="window.location.href='product.html';">
+              <div class="product-image-container">
+                <img src="assets/all-ads/anker-speaker.png" class="product-image" alt="SoundCore Speaker">
+              </div>
+              <div class="product-info">
+                <div class="d-flex justify-content-between">
+                  <h2 class="product-title">Anker SoundCore Motion 300 Bluetooth Speaker</h2>
+                </div>
+                <p class="location-badge">Colombo, Mobile Phones</p>
+                <p class="product-price">Rs 165,000</p>
+                <p class="timestamp">just now</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ad Banner -->
+        <div class="ad-banner">
+          <img src="/api/placeholder/800/500" class="w-100" alt="Advertise banner">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--footer-->
+<footer class="text-white pt-5 pb-3" style="background-color: #e5efff">
+
+  <div class="container">
+
+    <div class="row mb-5">
+      <img class="footer-vikunuwa-logo" src="assets/vikunuwa-footer-logo.png">
+    </div>
+
+    <div class="row">
+      <!-- About Us Section -->
+      <div class="col-md-3 mb-4">
+        <!--                <h5 class="footer-title">About Us</h5>-->
+        <p class="footer-text-color">Connecting Sri Lanka – Buy, Sell & Discover with Ease! Your Trusted Marketplace for Everything You Need.</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-md-3 mb-4">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="" class="footer-text-color text-decoration-none">All Ads</a></li>
+          <li><a href="" class="footer-text-color text-decoration-none">About Us</a></li>
+          <li><a href="" class="footer-text-color text-decoration-none">Support</a></li>
+          <li><a href="" class="footer-text-color text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Policies Section -->
+      <div class="col-md-3 mb-4">
+        <h5 class="footer-title">Policies</h5>
+        <ul class="list-unstyled">
+          <li><a href="/privacy-policy" class="footer-text-color text-decoration-none">Privacy Policy</a></li>
+          <li><a href="/terms" class="footer-text-color text-decoration-none">Terms & Conditions</a></li>
+          <li><a href="/refund-policy" class="footer-text-color text-decoration-none">Refund Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-md-3 mb-4">
+        <h5 class="footer-title">Contact Us</h5>
+        <p class="footer-text-color"><i class="bi bi-envelope"></i> support@vikunuwa.lk</p>
+        <p class="footer-text-color"><i class="bi bi-telephone"></i> +94 76 549 8 907</p>
+        <p class="footer-text-color"><i class="bi bi-geo-alt"></i> No. 123, Main Street, Colombo.</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="footer-text-color"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="footer-text-color"><i class="bi bi-twitter fs-4"></i></a>
+          <a href="#" class="footer-text-color"><i class="bi bi-instagram fs-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="text-center py-2"  style="background-color: #e5efff">
+    <p class="mb-0 footer-text-color"> copyright &copy; 2025 developed by <a style="color: #7c7c7c" href="https://kaveesha-rukshan-portfolio.vercel.app" target="_blank">Rukshan</a> | All rights reserved</p>
+  </div>
+
+</footer>
+
+
+
+
+
+
+<!--Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Add event listeners for dropdowns
+  document.addEventListener('DOMContentLoaded', function() {
+    // Location button dropdown
+    const locationBtn = document.querySelector('.location-btn');
+    locationBtn.addEventListener('click', function() {
+      // Toggle location dropdown (would be implemented with actual dropdown)
+      console.log('Location dropdown toggled');
+    });
+
+    // Category button dropdown
+    const categoryBtn = document.querySelector('.category-btn');
+    categoryBtn.addEventListener('click', function() {
+      // Toggle category dropdown (would be implemented with actual dropdown)
+      console.log('Category dropdown toggled');
+    });
+
+    // Favorite buttons
+    const favButtons = document.querySelectorAll('.favorite-btn');
+    favButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        this.classList.toggle('text-muted');
+        this.classList.toggle('text-danger');
+      });
+    });
+
+    // Save search button
+    const saveSearchBtn = document.querySelector('.save-search-btn');
+    saveSearchBtn.addEventListener('click', function() {
+      console.log('Search saved');
+      // Implement save search functionality
+    });
+  });
+</script>
+
+
+</body>
+</html>
